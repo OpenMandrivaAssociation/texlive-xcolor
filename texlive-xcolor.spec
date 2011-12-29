@@ -18,9 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 Provides easy driver-independent access to several kinds of
@@ -32,20 +29,12 @@ colors plus repeated non-aligned material (like horizontal
 lines) in tables. Colors can be mixed like
 \color{red!30!green!40!blue}.
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -66,7 +55,6 @@ lines) in tables. Colors can be mixed like
 #- source
 %doc %{_texmfdistdir}/source/latex/xcolor/xcolor.dtx
 %doc %{_texmfdistdir}/source/latex/xcolor/xcolor.ins
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -77,5 +65,3 @@ lines) in tables. Colors can be mixed like
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips tex doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
