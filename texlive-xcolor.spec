@@ -65,3 +65,16 @@ lines) in tables. Colors can be mixed like
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.11-2
++ Revision: 757560
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.11-1
++ Revision: 719918
+- texlive-xcolor
+- texlive-xcolor
+- texlive-xcolor
+
