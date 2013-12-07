@@ -6,7 +6,7 @@
 # catalog-version 2.11
 Name:		texlive-xcolor
 Version:	2.11
-Release:	4
+Release:	5
 Summary:	Driver-independent color extensions for LaTeX and pdfLaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xcolor
