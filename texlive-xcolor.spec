@@ -1,6 +1,6 @@
 Name:		texlive-xcolor
-Version:	63563
-Release:	2
+Version:	68864
+Release:	1
 Summary:	Driver-independent color extensions for LaTeX and pdfLaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xcolor
