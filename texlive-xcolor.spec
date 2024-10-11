@@ -1,5 +1,5 @@
 Name:		texlive-xcolor
-Version:	68864
+Version:	72484
 Release:	1
 Summary:	Driver-independent color extensions for LaTeX and pdfLaTeX
 Group:		Publishing
