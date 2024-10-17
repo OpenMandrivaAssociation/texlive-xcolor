@@ -3,7 +3,7 @@ Version:	72484
 Release:	1
 Summary:	Driver-independent color extensions for LaTeX and pdfLaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xcolor
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/xcolor
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xcolor.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xcolor.doc.r%{version}.tar.xz
